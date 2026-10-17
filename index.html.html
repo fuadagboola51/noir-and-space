@@ -17,7 +17,6 @@
         
 
 
-
  <div>   
 <button id="hamburger" > 
     ⇶
@@ -25,6 +24,11 @@
     <p class="egg">NOIR & SPACE</p>     
 
  </div>
+
+ <div class="searchBar">
+    <input type="search" placeholder="&#128269; Search your choice" class="search">
+    <button class="cups"> Find food</button>
+</div>
 <div class="board" >
     <a href="" class="ball">Home</a> &nbsp;&nbsp;&nbsp;
 <a href="" class="ball">Menu</a> &nbsp;&nbsp;&nbsp;
@@ -41,7 +45,7 @@
 <div class="door">
 <p class="egg">MODERN AFRICAN DINING</p>
 <h1 class="eye">AFRICAN FLAVOR <br>
-REIMAGINED.
+RE-IMAGINED.
 </h1>
 
 <p>Contemporary Nigerian dining rooted in tradition, <br>
@@ -53,7 +57,7 @@ crafted for the modern palate</p>
 </div>
 
 
-<div class="gun">
+<div>
     <p class="gun">Scroll down</p>
 </div>
 </div>
@@ -66,12 +70,12 @@ crafted for the modern palate</p>
     <div>
 <p class="egg">NOIR & SPICE</p>
     </div>
-<div>
+<div class="">
 <a href="" class="ball">Home</a> &nbsp;&nbsp;&nbsp;
 <a href="" class="ball">Menu</a> &nbsp;&nbsp;&nbsp;
 <a href="" class="ball">Our Story</a> &nbsp;&nbsp;&nbsp;
 <a href="" class="ball">Galaxy</a> &nbsp;&nbsp;&nbsp;
-<a href="" class="ball">Contact</a>
+<a href="" class="ball">Contact</a>&nbsp;&nbsp;&nbsp;
 <button class="cup">Reserve a Table</button>
 </div>
 
@@ -83,14 +87,14 @@ crafted for the modern palate</p>
 <div class="high">
 
 <h3>Gallery </h3>
-<p> A glimpse into our world - etiquettte dishes, beautiful spaces,
-    <br>and unforgettable moments.
+<p> A glimpse into our world - etiquettte dishes, 
+    <br>beautiful spaces,and unforgettable moments.
 </p>
-<div>
-    <button class="cup">All</button>
-    <button class="cup">Food</button>
-    <button class="cup">Interior</button>
-    <button class="cup">Events</button>
+<div class="">
+    <button class="cup">All</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="cup">Food</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="cup">Interior</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="cup">Events</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 </div>
@@ -119,91 +123,132 @@ crafted for the modern palate</p>
 NOIR & SPACE
 
 <div>
-<a href="" class="ball">Home</a>
-<a href="" class="ball">Menu</a>
-<a href="" class="ball">Our story</a>
-<a href=""  class="ball">Galaxy</a>
-<a href="" class="ball">Contact</a>
+<a href="" class="ball">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="" class="ball">Menu</a>&nbsp;&nbsp;&nbsp;
+<a href="" class="ball">Our story</a>&nbsp;&nbsp;&nbsp;
+<a href=""  class="ball">Galaxy</a>&nbsp;&nbsp;&nbsp;
+<a href="" class="ball">Contact</a>&nbsp;&nbsp;&nbsp;
 <button class="cup">Reserve a Table</button>
 </div>
 </div>
 
 <div class="high">
 <h3>Our Menu</h3>
-<p>A carefully curated selection of modern african dishes,crafted widt
-    <br>premium ingredients and bold flavor
+<p>A carefully curated selection of modern
+     <br> african dishes,crafted width premium
+     <br>  ingredients and bold flavor
 </p>
 </div>
 
-<div>
-<button class="cup">All</button>
-<button class="cup">Starter</button>
-<button class="cup">Mains</button>
-<button class="cup">From the grill</button> 
-<button class="cup">Desert</button>
-<button class="cup">Drinks</button>
+<div class="done">
+<button class="cup">All</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="cup">Starter</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="cup">Mains</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="cup">From the grill</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="cup">Desert</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="cup">Drinks</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
-<div class="horse">
-<div data-name="Jollof Aracini"   data-price = "20500">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NJkwEdXMzVHskCocklpFl-biL9S1sHbrDRi_H1qHZA&s=10" alt="" class="ink">
-<h4> Jollof Arancini</h4>
-<p>crispy jollof rice dish ,smoked
-    <br> tomato nourished,pepper sauce
+<div class="horse" id="scre">
+<div class="food" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NJkwEdXMzVHskCocklpFl-biL9S1sHbrDRi_H1qHZA&s=10" alt="" class="ink" >
+<h4 id="jollof"> Jollof Arancini</h4>
+<p>Crispy jollof rice dish ,smoked
+    <br> tomato nourished,pepper sauce.
 </p>
 <button class="mandem" >₦20,500</button>
+<div class="quantityControl">
+    <button id="minusBtn" >-</button>
+    <span id="display">1</span>
+    <button id="addBtn" >+</button>
 </div>
-<div data-name="Smoked Suya Short Ribs" data-price="17000">
+<p>Total: <span id="total"></span></p>
+</div>
+<div class="food" >
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5qGoJ-9q_2m2gZhaGUWuWluTtbbmDA91INSeYwGHRjlWvusxPKRuaWY&s=10" alt="" class="ink">
 <h4>Smoked suya short ribs</h4>
 <p>Stew smoked beef short rib,suya spice,
-    <br>garnished onions
+    <br>garnished onions.
 </p>
 <button class="mandem">₦17,000</button>
+
+<div class="quantityControl">
+    <button id="minusqBtn" data-index="1">-</button>
+    <span id="displaq">1</span>
+    <button id="addqBtn" data-index="1">+</button>
+</div>
+<p>Total:  <span id="totalq"></span></p>
 </div>
     
-<div data-name="Pepper soup prawn" data-price="19500">
+<div class="food" >
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_q-LVGCDhcT7g8ubJiajVUd2v25hjcEu0HHrNG0tNA&s=10" alt="" class="ink">
 <h4>Pepper soup prawn</h4>
 <p>Tiger prawns aromatic pepper broth,
-    scent leafs
+    scent leafs.
 </p>
 <button class="mandem">₦19,500</button>
+
+<div class="quantityControl">
+    <button id="minuswBtn" data-index="2">-</button>
+    <span id="displaw">1</span>
+    <button id="addwBtn" data-index="2">+</button>
+</div>
+<p>Total: <span id="totalw"></span></p>
 </div>
      
 </div>
 
 <div id="orderBadge"></div>
-<div class="horse">
-<div data-name="Nigerian Beef Wellington" data-price="13000">
+<div class="horse" id="scre">
+<div class="food" data-price="13000">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5i31jin0JJvF7lN3Ht2xerNTfddhMoz5AhsnXWP9vA&s=10" alt="" class="ink">
-<h4>Nigerian Beef Wellington</h4>
+<h4>Nigerian Beef Wellington</h4> 
 
 <p>Tensored beef,spread mushroom oziness
-    <br>plantain sauce
+    <br>plantain sauce.
 </p>
 <button class="mandem">₦13,000</button>
+
+<div class="quantityControl">
+    <button id="minuseBtn" data-index="3">-</button>
+    <span id="displae">1</span>
+    <button id="addeBtn" data-index="3">+</button>
+</div>
+<p>Total: <span id="totale"></span></p>
 </div>
 
 
-<div data-name="Grilled Tilipia" data-price="14500">
+<div class="food" >
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ4yWOcpg-swGPgU2v3uqhw_iWv2L6yhZkznRyM6FZCw&s=10" alt="" class="ink">
 
-<h4>Grilled Tilipia</h4>
+<h4>Grilled Tilapia</h4>
 <p>Fresh tilipia pepper, sauce vegetable.</p>
 
 <button class="mandem">₦14,500</button>
 
+<div class="quantityControl">
+    <button id="minusrBtn" data-index="4">-</button>
+    <span id="displar">1</span>
+    <button id="addrBtn" data-index="4">+</button>
+</div>
+<p>Total: <span id="totalr"></span></p>
 </div>
 
-<div data-name="Creamy Spinach & Chicken" data-price="17500">
+<div class="food" >
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhI8U6VpuKtax3bn7nCf6JqbkqZQrs66mOYK1M5iwAg&s=10" alt="" class="ink">
 <h4>Creamy Spinach & Chicken</h4>
 <p>Creamy Spinach,coconut cream,
     <br>served with rice.</p>
 
     <button class="mandem">₦17,500</button>
+    
+<div class="quantityControl">
+    <button id="minustBtn" data-index="5">-</button>
+    <span id="displat">1</span>
+    <button id="addtBtn" data-index="5">+</button>
 </div>
+<p>Total: <span id="totalt"></span></p>
+</div> 
 
 
 </div>
@@ -483,7 +528,6 @@ REQUEST RESERVATION
  
 
 </div>
-
 
 <script src="port folio.js"></script>
 </body>

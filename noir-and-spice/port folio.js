@@ -60,54 +60,147 @@ closed.addEventListener("click", function ()
 {junks.classList.remove("active");});
 
 
-let order = [];
-let horse = document.querySelectorAll(".horse >div");
-horse.forEach(function(card) {
-    let mandem = card.querySelector(".mandem");
-
-mandem.addEventListener("click", function (){
-    let foodName = card.dataset.name;
-    let foodPrice =Number(card.dataset.price);
 
 
-let  existing = order.find(function(item)  {
-    return item.name === foodName && item.Price === foodPrice;
+let addBtn = document.getElementById ("addBtn");
+let minusBtn = document.getElementById("minusBtn");
+let display = document.getElementById("display");
+let quantity = 1
+let sumAll = document.getElementById("total");
+let total =20500
 
-});
+function calculateTotal(total,quantity) 
+{return total*quantity;}
+addBtn.addEventListener ("click",() => 
+    {  quantity++;
+        display.textContent = quantity;
+        sumAll.textContent ="₦"+ calculateTotal(quantity,total);
+    
+    });
 
-if(existing) {existing.quantity++;} 
-else{order.push({
-    name: foodName,
-     price:foodPrice,
-    quantity:1
-});}
-    console.log(order);
-showOrder(card);
+    minusBtn.addEventListener ( "click",() => 
+    {if (quantity > 1) 
+        {quantity--;}
+        display.textContent = quantity;
+        sumAll.textContent ="₦"+ calculateTotal(quantity,total);
+
+    });
+
+let addqBtn = document.getElementById ("addqBtn");
+let minusqBtn = document.getElementById("minusqBtn");
+let displaq = document.getElementById("displaq");
+let quantityq = 1
+let sumAllq = document.getElementById("totalq");
+let totalq =17500
+
+addqBtn.addEventListener ("click",() => 
+    {  quantityq++;
+        displaq.textContent = quantityq;
+        sumAllq.textContent ="₦"+ calculateTotal(quantityq,totalq);
+    
+    });
+
+    minusqBtn.addEventListener ( "click",() => 
+    {if (quantityq > 1) 
+        {quantityq--;}
+        displaq.textContent = quantityq;
+        sumAllq.textContent ="₦"+ calculateTotal(quantityq,totalq);
+
+    });
 
 
-});
-});
- 
+let addwBtn = document.getElementById ("addwBtn");
+let minuswBtn = document.getElementById("minuswBtn");
+let displaw = document.getElementById("displaw");
+let quantityw = 1
+let sumAllw = document.getElementById("totalw");
+let totalw =19500
 
-function showOrder(card) {
+addwBtn.addEventListener ("click",() => 
+    {  quantityw++;
+        displaw.textContent = quantityw;
+        sumAllw.textContent ="₦"+ calculateTotal(quantityw,totalw);
+    
+    });
 
-let foodName = card.dataset.name;
+    minuswBtn.addEventListener ( "click",() => 
+    {if (quantityw > 1) 
+        {quantityw--;}
+        displaw.textContent = quantityw;
+        sumAllw.textContent ="₦"+ calculateTotal(quantityw,totalw);
 
-let item = order.find(function(item)
-{return item.name === foodName;});
-console.log("SHOWING ORDER RUNNING");
-console.log(item);
+    });
 
-let oldOrder = card.querySelector(".orderBadge");
-if (!oldOrder) {
-    oldOrder = document.createElement("div");
-    oldOrder.classList.add("orderBadge");
-    card.appendChild(oldOrder);
 
-}
-oldOrder.innerHTML= `
-<strong>${item.name} </strong>
-<span>${item.price.toLocaleString()} </span>
-<span>${item.quantity} </span>`;
+let addeBtn = document.getElementById ("addeBtn");
+let minuseBtn = document.getElementById("minuseBtn");
+let displae = document.getElementById("displae");
+let quantitye = 1
+let sumAlle = document.getElementById("totale");
+let totale =13000
 
-}
+addeBtn.addEventListener ("click",() => 
+    {  quantitye++;
+        displae.textContent = quantitye;
+        sumAlle.textContent ="₦"+ calculateTotal(quantitye,totale);
+    
+    });
+
+    minuseBtn.addEventListener ( "click",() => 
+    {if (quantitye > 1) 
+        {quantitye--;}
+        displae.textContent = quantitye;
+        sumAlle.textContent ="₦"+ calculateTotal(quantitye,totale);
+
+    });
+
+let addrBtn = document.getElementById ("addrBtn");
+let minusrBtn = document.getElementById("minusrBtn");
+let displar = document.getElementById("displar");
+let quantityr = 1
+let sumAllr = document.getElementById("totalr");
+let totalr =14500
+
+addrBtn.addEventListener ("click",() => 
+    {  quantityr++;
+        displar.textContent = quantityr;
+        sumAllr.textContent ="₦"+ calculateTotal(quantityr,totalr);
+    
+    });
+
+    minusrBtn.addEventListener ( "click",() => 
+    {if (quantityr > 1) 
+        {quantityr--;}
+        displar.textContent = quantityr;
+        sumAllr.textContent ="₦"+ calculateTotal(quantityr,totalr);
+
+    });
+
+
+let addtBtn = document.getElementById ("addtBtn");
+let minustBtn = document.getElementById("minustBtn");
+let displat = document.getElementById("displat");
+let quantityt = 1
+let sumAllt = document.getElementById("totalt");
+let totalt =17500
+
+addtBtn.addEventListener ("click",() => 
+    {  quantityt++;
+        displat.textContent = quantityt;
+        sumAllt.textContent ="₦"+ calculateTotal(quantityt,totalt);
+    
+    });
+
+    minustBtn.addEventListener ( "click",() => 
+    {if (quantityt > 1) 
+        {quantityt--;}
+        displat.textContent = quantityt;
+        sumAllt.textContent ="₦"+ calculateTotal(quantityt,totalt);
+
+    });
+
+
+
+
+
+
